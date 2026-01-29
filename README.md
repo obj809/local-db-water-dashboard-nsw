@@ -44,10 +44,8 @@ Create a centralized system that stores dam metadata, tracks water storage level
 - [x] Excel export with customizable table filtering
 
 ## Additions & Improvements
-- [ ] Live NSW water data API integration
 - [ ] Dashboard visualization layer
 - [ ] Automated data refresh scheduling
-- [ ] Low storage level alerts
 - [ ] Multi-region support
 
 ## Learning Highlights
