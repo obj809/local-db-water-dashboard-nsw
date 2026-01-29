@@ -12,7 +12,7 @@ Create a centralized system that stores dam metadata, tracks water storage level
 - [How To Use](#how-to-use)
 - [Project Features](#project-features)
 - [Learning Highlights](#learning-highlights)
-- [Contact](#contact)
+- [Contact](#contact-me)
 
 ## Database schema
 
@@ -106,17 +106,19 @@ CREATE TABLE dam_group_members (
 ## How To Use
 1. Create virtual environment: `python3 -m venv venv && source venv/bin/activate`
 2. Install dependencies: `pip install -r requirements.txt`
-3. Create `.env` file with MySQL credentials (LOCAL_DB_HOST, LOCAL_DB_PORT, LOCAL_DB_NAME, LOCAL_DB_USER, LOCAL_DB_PASSWORD)
+3. Create `.env` file with MySQL credentials
 4. Run database setup: `python3 scripts/local_db_create_db.py && python3 scripts/local_db_create_schema.py && python3 scripts/local_db_seed_data.py`
 5. Export to Excel: `python scripts/local_export_mysql_to_excel.py`
 
 ## Project Features
+
 - [x] 34 NSW dams with metadata (capacity, coordinates, identifiers)
 - [x] Dam grouping system (Sydney, popular, large, small, greatest released)
 - [x] 24-month historical snapshots with rolling average analysis
 - [x] Excel export with customizable table filtering
 
 ## Learning Highlights
+
 - Normalized database schema design with foreign key relationships
 - Orchestrated data pipelines with dependency ordering
 - Upsert patterns and composite keys in SQL
