@@ -43,11 +43,6 @@ Create a centralized system that stores dam metadata, tracks water storage level
 - [x] 24-month historical snapshots with rolling average analysis
 - [x] Excel export with customizable table filtering
 
-## Additions & Improvements
-- [ ] Dashboard visualization layer
-- [ ] Automated data refresh scheduling
-- [ ] Multi-region support
-
 ## Learning Highlights
 - Normalized database schema design with foreign key relationships
 - Orchestrated data pipelines with dependency ordering
