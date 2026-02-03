@@ -16,8 +16,6 @@ SEEDING_SCRIPTS: List[str] = [
     "seeding/seed_dam_group_members.py",
     "seeding/seed_dam_resources.py",
     "seeding/seed_latest_data.py",
-    "seeding/seed_specific_dam_analysis.py",
-    "seeding/seed_overall_dam_analysis.py",
 ]
 
 def root_dir() -> str:

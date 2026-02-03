@@ -5,7 +5,7 @@ import json
 import mysql.connector
 from dotenv import load_dotenv
 
-DATA_FILE = os.path.join(os.path.dirname(__file__), "..", "data", "dams.json")
+DATA_FILE = os.path.join(os.path.dirname(__file__), "..", "output_data", "dams.json")
 
 
 def cfg():
@@ -27,8 +27,8 @@ def load_dams():
             d["dam_id"],
             d["dam_name"],
             d.get("full_volume"),
-            d.get("lat"),
-            d.get("long"),
+            d.get("latitude"),
+            d.get("longitude"),
         )
         for d in data
     ]

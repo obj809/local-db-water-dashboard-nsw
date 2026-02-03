@@ -1,16 +1,11 @@
 # seeding/seed_dam_groups.py
 
 import os
+import json
 import mysql.connector
 from dotenv import load_dotenv
 
-GROUPS = [
-    ("sydney_dams",),
-    ("popular_dams",),
-    ("large_dams",),
-    ("small_dams",),
-    ("greatest_released",),
-]
+DATA_FILE = os.path.join(os.path.dirname(__file__), "..", "output_data", "dam_groups.json")
 
 
 def cfg():
@@ -24,7 +19,14 @@ def cfg():
     )
 
 
+def load_dam_groups():
+    with open(DATA_FILE, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    return [(d["group_name"],) for d in data]
+
+
 def main():
+    groups = load_dam_groups()
     conn = mysql.connector.connect(**cfg())
     cur = conn.cursor()
     sql = """
@@ -32,9 +34,9 @@ def main():
     VALUES (%s)
     ON DUPLICATE KEY UPDATE group_name=VALUES(group_name);
     """
-    cur.executemany(sql, GROUPS)
+    cur.executemany(sql, groups)
     conn.commit()
-    print(f"seed_dam_groups.py: upserted {cur.rowcount} rows ({len(GROUPS)} groups)")
+    print(f"seed_dam_groups.py: upserted {cur.rowcount} rows ({len(groups)} groups)")
     cur.close()
     conn.close()
 

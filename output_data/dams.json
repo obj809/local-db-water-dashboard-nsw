@@ -1,0 +1,268 @@
+[
+  {
+    "dam_id": "203042",
+    "dam_name": "Toonumbar Dam",
+    "full_volume": 10814,
+    "latitude": -28.602383,
+    "longitude": 152.763769
+  },
+  {
+    "dam_id": "210097",
+    "dam_name": "Glenbawn Dam",
+    "full_volume": 748827,
+    "latitude": -32.064304,
+    "longitude": 150.982007
+  },
+  {
+    "dam_id": "210102",
+    "dam_name": "Lostock Dam",
+    "full_volume": 19736,
+    "latitude": -32.335999,
+    "longitude": 151.440793
+  },
+  {
+    "dam_id": "210117",
+    "dam_name": "Glennies Creek Dam",
+    "full_volume": 282303,
+    "latitude": -32.339259,
+    "longitude": 151.286947
+  },
+  {
+    "dam_id": "212205",
+    "dam_name": "Nepean Dam",
+    "full_volume": 67730,
+    "latitude": -34.335046,
+    "longitude": 150.617666
+  },
+  {
+    "dam_id": "212211",
+    "dam_name": "Avon Dam",
+    "full_volume": 142230,
+    "latitude": -34.350932,
+    "longitude": 150.6405
+  },
+  {
+    "dam_id": "212212",
+    "dam_name": "Wingecarribee Reservoir",
+    "full_volume": 29880,
+    "latitude": -34.540413,
+    "longitude": 150.498916
+  },
+  {
+    "dam_id": "212220",
+    "dam_name": "Cordeaux Dam",
+    "full_volume": 93790,
+    "latitude": -34.336403,
+    "longitude": 150.745918
+  },
+  {
+    "dam_id": "212232",
+    "dam_name": "Cataract Dam",
+    "full_volume": 97190,
+    "latitude": -34.265584,
+    "longitude": 150.803553
+  },
+  {
+    "dam_id": "212243",
+    "dam_name": "Warragamba Dam",
+    "full_volume": 2064680,
+    "latitude": -33.891111,
+    "longitude": 150.591111
+  },
+  {
+    "dam_id": "213210",
+    "dam_name": "Woronora Dam",
+    "full_volume": 69536,
+    "latitude": -34.109296,
+    "longitude": 150.936519
+  },
+  {
+    "dam_id": "213240",
+    "dam_name": "Prospect Reservoir",
+    "full_volume": 33330,
+    "latitude": -33.832851,
+    "longitude": 150.890158
+  },
+  {
+    "dam_id": "215212",
+    "dam_name": "Tallowa Dam",
+    "full_volume": 7500,
+    "latitude": -34.771563,
+    "longitude": 150.315266
+  },
+  {
+    "dam_id": "215235",
+    "dam_name": "Fitzroy Falls Reservoir",
+    "full_volume": 9950,
+    "latitude": -34.645106,
+    "longitude": 150.48719
+  },
+  {
+    "dam_id": "219027",
+    "dam_name": "Brogo Dam",
+    "full_volume": 8786,
+    "latitude": -36.476593,
+    "longitude": 149.722275
+  },
+  {
+    "dam_id": "219033",
+    "dam_name": "Cochrane Dam",
+    "full_volume": 2700,
+    "latitude": -36.5703,
+    "longitude": 149.4554
+  },
+  {
+    "dam_id": "401027",
+    "dam_name": "Hume Dam",
+    "full_volume": 2982000,
+    "latitude": -36.196481,
+    "longitude": 147.077477
+  },
+  {
+    "dam_id": "410102",
+    "dam_name": "Blowering Dam",
+    "full_volume": 1604010,
+    "latitude": -35.515836,
+    "longitude": 148.254929
+  },
+  {
+    "dam_id": "410131",
+    "dam_name": "Burrinjuck Dam",
+    "full_volume": 1024750,
+    "latitude": -35.014067,
+    "longitude": 148.643656
+  },
+  {
+    "dam_id": "412010",
+    "dam_name": "Lake Wyangala",
+    "full_volume": 1217035,
+    "latitude": -33.931625,
+    "longitude": 149.010236
+  },
+  {
+    "dam_id": "412106",
+    "dam_name": "Carcoar Dam",
+    "full_volume": 35917,
+    "latitude": -33.601561,
+    "longitude": 149.203153
+  },
+  {
+    "dam_id": "412107",
+    "dam_name": "Lake Cargelligo",
+    "full_volume": 30163,
+    "latitude": -33.295281,
+    "longitude": 146.390692
+  },
+  {
+    "dam_id": "412108",
+    "dam_name": "Lake Brewster",
+    "full_volume": 145369,
+    "latitude": -33.492387,
+    "longitude": 145.975896
+  },
+  {
+    "dam_id": "416030",
+    "dam_name": "Pindari Dam",
+    "full_volume": 311500,
+    "latitude": -29.381739,
+    "longitude": 151.269225
+  },
+  {
+    "dam_id": "418035",
+    "dam_name": "Copeton Dam",
+    "full_volume": 1345510,
+    "latitude": -29.904891,
+    "longitude": 150.989479
+  },
+  {
+    "dam_id": "419041",
+    "dam_name": "Keepit Dam",
+    "full_volume": 418950,
+    "latitude": -30.819471,
+    "longitude": 150.516625
+  },
+  {
+    "dam_id": "419069",
+    "dam_name": "Chaffey Dam",
+    "full_volume": 100509,
+    "latitude": -31.356884,
+    "longitude": 151.119117
+  },
+  {
+    "dam_id": "419080",
+    "dam_name": "Split Rock Dam",
+    "full_volume": 393840,
+    "latitude": -30.537122,
+    "longitude": 150.674591
+  },
+  {
+    "dam_id": "421078",
+    "dam_name": "Burrendong Dam",
+    "full_volume": 1154270,
+    "latitude": -32.688321,
+    "longitude": 149.157884
+  },
+  {
+    "dam_id": "421148",
+    "dam_name": "Windamere Dam",
+    "full_volume": 366989,
+    "latitude": -32.782606,
+    "longitude": 149.81548
+  },
+  {
+    "dam_id": "421189",
+    "dam_name": "Oberon Dam",
+    "full_volume": 45000,
+    "latitude": -33.72467,
+    "longitude": 149.866781
+  },
+  {
+    "dam_id": "425022",
+    "dam_name": "Lake Menindee",
+    "full_volume": 629492,
+    "latitude": -32.343792,
+    "longitude": 142.328445
+  },
+  {
+    "dam_id": "425023",
+    "dam_name": "Lake Cawndilla",
+    "full_volume": 631050,
+    "latitude": -32.475672,
+    "longitude": 142.229739
+  },
+  {
+    "dam_id": "425046",
+    "dam_name": "Lake Wetherell",
+    "full_volume": 115759,
+    "latitude": -32.311286,
+    "longitude": 142.54764
+  },
+  {
+    "dam_id": "425047",
+    "dam_name": "Lake Tandure",
+    "full_volume": 77419,
+    "latitude": -32.27323,
+    "longitude": 142.5424
+  },
+  {
+    "dam_id": "42510036",
+    "dam_name": "Lake Pamamaroo",
+    "full_volume": 270001,
+    "latitude": -32.3,
+    "longitude": 142.44
+  },
+  {
+    "dam_id": "42510037",
+    "dam_name": "Lake Copi Hollow",
+    "full_volume": 7729,
+    "latitude": -32.254265,
+    "longitude": 142.392175
+  },
+  {
+    "dam_id": "BlueMountainsTotal",
+    "dam_name": "Blue Mountains Dams",
+    "full_volume": 2890,
+    "latitude": -33.693311,
+    "longitude": 150.298807
+  }
+]

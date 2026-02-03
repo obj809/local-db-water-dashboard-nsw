@@ -5,7 +5,7 @@ import json
 import mysql.connector
 from dotenv import load_dotenv
 
-DATA_FILE = os.path.join(os.path.dirname(__file__), "..", "data", "dams_resources_latest.json")
+DATA_FILE = os.path.join(os.path.dirname(__file__), "..", "output_data", "dams_resources_latest.json")
 
 
 def cfg():
@@ -23,23 +23,18 @@ def load_latest_data():
     with open(DATA_FILE, "r", encoding="utf-8") as f:
         data = json.load(f)
 
-    rows = []
-    for item in data:
-        dam_id = item["dam_id"]
-        dam_name = item["dam_name"]
-        resources = item.get("resources", [])
-        if resources:
-            r = resources[0]
-            rows.append((
-                dam_id,
-                dam_name,
-                r.get("date"),
-                r.get("storage_volume"),
-                r.get("percentage_full"),
-                r.get("storage_inflow"),
-                r.get("storage_release"),
-            ))
-    return rows
+    return [
+        (
+            d["dam_id"],
+            d["dam_name"],
+            d.get("date"),
+            d.get("storage_volume"),
+            d.get("percentage_full"),
+            d.get("storage_inflow"),
+            d.get("storage_release"),
+        )
+        for d in data
+    ]
 
 
 def main():

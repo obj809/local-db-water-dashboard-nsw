@@ -1,0 +1,162 @@
+[
+  {
+    "group_name": "sydney_dams",
+    "dam_id": "212232"
+  },
+  {
+    "group_name": "sydney_dams",
+    "dam_id": "212220"
+  },
+  {
+    "group_name": "sydney_dams",
+    "dam_id": "212211"
+  },
+  {
+    "group_name": "sydney_dams",
+    "dam_id": "212205"
+  },
+  {
+    "group_name": "sydney_dams",
+    "dam_id": "213210"
+  },
+  {
+    "group_name": "sydney_dams",
+    "dam_id": "213240"
+  },
+  {
+    "group_name": "sydney_dams",
+    "dam_id": "212212"
+  },
+  {
+    "group_name": "sydney_dams",
+    "dam_id": "215235"
+  },
+  {
+    "group_name": "popular_dams",
+    "dam_id": "212243"
+  },
+  {
+    "group_name": "popular_dams",
+    "dam_id": "212232"
+  },
+  {
+    "group_name": "popular_dams",
+    "dam_id": "212220"
+  },
+  {
+    "group_name": "popular_dams",
+    "dam_id": "212211"
+  },
+  {
+    "group_name": "popular_dams",
+    "dam_id": "212205"
+  },
+  {
+    "group_name": "popular_dams",
+    "dam_id": "213210"
+  },
+  {
+    "group_name": "popular_dams",
+    "dam_id": "215212"
+  },
+  {
+    "group_name": "popular_dams",
+    "dam_id": "213240"
+  },
+  {
+    "group_name": "large_dams",
+    "dam_id": "401027"
+  },
+  {
+    "group_name": "large_dams",
+    "dam_id": "212243"
+  },
+  {
+    "group_name": "large_dams",
+    "dam_id": "410102"
+  },
+  {
+    "group_name": "large_dams",
+    "dam_id": "412010"
+  },
+  {
+    "group_name": "large_dams",
+    "dam_id": "418035"
+  },
+  {
+    "group_name": "large_dams",
+    "dam_id": "410131"
+  },
+  {
+    "group_name": "large_dams",
+    "dam_id": "421078"
+  },
+  {
+    "group_name": "large_dams",
+    "dam_id": "210097"
+  },
+  {
+    "group_name": "small_dams",
+    "dam_id": "219033"
+  },
+  {
+    "group_name": "small_dams",
+    "dam_id": "215235"
+  },
+  {
+    "group_name": "small_dams",
+    "dam_id": "215212"
+  },
+  {
+    "group_name": "small_dams",
+    "dam_id": "42510037"
+  },
+  {
+    "group_name": "small_dams",
+    "dam_id": "219027"
+  },
+  {
+    "group_name": "small_dams",
+    "dam_id": "203042"
+  },
+  {
+    "group_name": "small_dams",
+    "dam_id": "210102"
+  },
+  {
+    "group_name": "small_dams",
+    "dam_id": "412107"
+  },
+  {
+    "group_name": "greatest_released",
+    "dam_id": "401027"
+  },
+  {
+    "group_name": "greatest_released",
+    "dam_id": "410102"
+  },
+  {
+    "group_name": "greatest_released",
+    "dam_id": "410131"
+  },
+  {
+    "group_name": "greatest_released",
+    "dam_id": "421078"
+  },
+  {
+    "group_name": "greatest_released",
+    "dam_id": "418035"
+  },
+  {
+    "group_name": "greatest_released",
+    "dam_id": "210117"
+  },
+  {
+    "group_name": "greatest_released",
+    "dam_id": "210097"
+  },
+  {
+    "group_name": "greatest_released",
+    "dam_id": "419041"
+  }
+]
