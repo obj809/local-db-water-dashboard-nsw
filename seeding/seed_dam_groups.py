@@ -12,6 +12,7 @@ GROUPS = [
     ("greatest_released",),
 ]
 
+
 def cfg():
     load_dotenv(os.path.join(os.path.dirname(__file__), "..", ".env"))
     return dict(
@@ -22,20 +23,21 @@ def cfg():
         database=os.getenv("LOCAL_DB_NAME"),
     )
 
+
 def main():
     conn = mysql.connector.connect(**cfg())
     cur = conn.cursor()
-    cur.executemany(
-        """
-        INSERT INTO dam_groups (group_name)
-        VALUES (%s)
-        ON DUPLICATE KEY UPDATE group_name=VALUES(group_name);
-        """,
-        GROUPS,
-    )
+    sql = """
+    INSERT INTO dam_groups (group_name)
+    VALUES (%s)
+    ON DUPLICATE KEY UPDATE group_name=VALUES(group_name);
+    """
+    cur.executemany(sql, GROUPS)
     conn.commit()
-    print(f"seed_dam_groups.py: upserted {cur.rowcount} rows")
-    cur.close(); conn.close()
+    print(f"seed_dam_groups.py: upserted {cur.rowcount} rows ({len(GROUPS)} groups)")
+    cur.close()
+    conn.close()
+
 
 if __name__ == "__main__":
     main()
