@@ -1,11 +1,14 @@
 # seeding/seed_latest_data.py
 
 import os
-import datetime as dt
+import json
 import mysql.connector
 from dotenv import load_dotenv
 
-def db_cfg():
+DATA_FILE = os.path.join(os.path.dirname(__file__), "..", "output_data", "dams_resources_latest.json")
+
+
+def cfg():
     load_dotenv(os.path.join(os.path.dirname(__file__), "..", ".env"))
     return dict(
         host=os.getenv("LOCAL_DB_HOST", "127.0.0.1"),
@@ -15,29 +18,33 @@ def db_cfg():
         database=os.getenv("LOCAL_DB_NAME"),
     )
 
+
+def load_latest_data():
+    with open(DATA_FILE, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    return [
+        (
+            d["dam_id"],
+            d["dam_name"],
+            d.get("date"),
+            d.get("storage_volume"),
+            d.get("percentage_full"),
+            d.get("storage_inflow"),
+            d.get("storage_release"),
+        )
+        for d in data
+    ]
+
+
 def main():
-    cfg = db_cfg()
-    today = dt.date.today().isoformat()
+    rows = load_latest_data()
+    if not rows:
+        print("seed_latest_data.py: No data found in JSON file.")
+        return
 
-    conn = mysql.connector.connect(**cfg)
+    conn = mysql.connector.connect(**cfg())
     cur = conn.cursor()
-
-    cur.execute("SELECT dam_id, dam_name, COALESCE(full_volume, 0) FROM dams ORDER BY dam_id;")
-    dams = cur.fetchall()
-    if not dams:
-        print("seed_latest_data.py: No dams found. Seed 'dams' first.")
-        cur.close(); conn.close(); return
-
-    rows = []
-    for i, (dam_id, dam_name, full_volume) in enumerate(dams):
-        pct = 92 + (i % 9)
-        inflow = 1000 + 100 * i
-        release = round(inflow * 0.70, 3)
-
-        cap = int(full_volume) if int(full_volume) > 0 else (200_000 + 10_000 * i)
-        storage = round(cap * (pct / 100.0), 3)
-
-        rows.append((dam_id, dam_name, today, storage, float(pct), float(inflow), release))
 
     sql = """
     INSERT INTO latest_data
@@ -54,8 +61,10 @@ def main():
     cur.executemany(sql, rows)
     conn.commit()
 
-    print(f"seed_latest_data.py: upserted {cur.rowcount} row(s) for {len(rows)} dam(s).")
-    cur.close(); conn.close()
+    print(f"seed_latest_data.py: upserted {cur.rowcount} row(s) for {len(rows)} dam(s)")
+    cur.close()
+    conn.close()
+
 
 if __name__ == "__main__":
     main()
