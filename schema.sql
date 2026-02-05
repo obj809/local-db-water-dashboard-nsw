@@ -36,16 +36,16 @@ CREATE TABLE specific_dam_analysis (
     analysis_date DATE,
     avg_storage_volume_12_months DECIMAL(10, 3),
     avg_storage_volume_5_years DECIMAL(10, 3),
-    avg_storage_volume_20_years DECIMAL(10, 3),
+    avg_storage_volume_10_years DECIMAL(10, 3),
     avg_percentage_full_12_months DECIMAL(6, 2),
     avg_percentage_full_5_years DECIMAL(6, 2),
-    avg_percentage_full_20_years DECIMAL(6, 2),
+    avg_percentage_full_10_years DECIMAL(6, 2),
     avg_storage_inflow_12_months DECIMAL(10, 3),
     avg_storage_inflow_5_years DECIMAL(10, 3),
-    avg_storage_inflow_20_years DECIMAL(10, 3),
+    avg_storage_inflow_10_years DECIMAL(10, 3),
     avg_storage_release_12_months DECIMAL(10, 3),
     avg_storage_release_5_years DECIMAL(10, 3),
-    avg_storage_release_20_years DECIMAL(10, 3),
+    avg_storage_release_10_years DECIMAL(10, 3),
     PRIMARY KEY (dam_id, analysis_date),
     FOREIGN KEY (dam_id) REFERENCES dams(dam_id)
 );
@@ -54,16 +54,16 @@ CREATE TABLE overall_dam_analysis (
     analysis_date DATE PRIMARY KEY,
     avg_storage_volume_12_months DECIMAL(10, 3),
     avg_storage_volume_5_years DECIMAL(10, 3),
-    avg_storage_volume_20_years DECIMAL(10, 3),
+    avg_storage_volume_10_years DECIMAL(10, 3),
     avg_percentage_full_12_months DECIMAL(6, 2),
     avg_percentage_full_5_years DECIMAL(6, 2),
-    avg_percentage_full_20_years DECIMAL(6, 2),
+    avg_percentage_full_10_years DECIMAL(6, 2),
     avg_storage_inflow_12_months DECIMAL(10, 3),
     avg_storage_inflow_5_years DECIMAL(10, 3),
-    avg_storage_inflow_20_years DECIMAL(10, 3),
+    avg_storage_inflow_10_years DECIMAL(10, 3),
     avg_storage_release_12_months DECIMAL(10, 3),
     avg_storage_release_5_years DECIMAL(10, 3),
-    avg_storage_release_20_years DECIMAL(10, 3)
+    avg_storage_release_10_years DECIMAL(10, 3)
 );
 
 CREATE TABLE dam_groups (

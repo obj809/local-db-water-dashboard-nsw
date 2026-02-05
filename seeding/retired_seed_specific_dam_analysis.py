@@ -69,24 +69,24 @@ def main():
     sql = """
     INSERT INTO specific_dam_analysis (
         dam_id, analysis_date,
-        avg_storage_volume_12_months, avg_storage_volume_5_years, avg_storage_volume_20_years,
-        avg_percentage_full_12_months, avg_percentage_full_5_years, avg_percentage_full_20_years,
-        avg_storage_inflow_12_months, avg_storage_inflow_5_years, avg_storage_inflow_20_years,
-        avg_storage_release_12_months, avg_storage_release_5_years, avg_storage_release_20_years
+        avg_storage_volume_12_months, avg_storage_volume_5_years, avg_storage_volume_10_years,
+        avg_percentage_full_12_months, avg_percentage_full_5_years, avg_percentage_full_10_years,
+        avg_storage_inflow_12_months, avg_storage_inflow_5_years, avg_storage_inflow_10_years,
+        avg_storage_release_12_months, avg_storage_release_5_years, avg_storage_release_10_years
     ) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)
     ON DUPLICATE KEY UPDATE
         avg_storage_volume_12_months=VALUES(avg_storage_volume_12_months),
         avg_storage_volume_5_years=VALUES(avg_storage_volume_5_years),
-        avg_storage_volume_20_years=VALUES(avg_storage_volume_20_years),
+        avg_storage_volume_10_years=VALUES(avg_storage_volume_10_years),
         avg_percentage_full_12_months=VALUES(avg_percentage_full_12_months),
         avg_percentage_full_5_years=VALUES(avg_percentage_full_5_years),
-        avg_percentage_full_20_years=VALUES(avg_percentage_full_20_years),
+        avg_percentage_full_10_years=VALUES(avg_percentage_full_10_years),
         avg_storage_inflow_12_months=VALUES(avg_storage_inflow_12_months),
         avg_storage_inflow_5_years=VALUES(avg_storage_inflow_5_years),
-        avg_storage_inflow_20_years=VALUES(avg_storage_inflow_20_years),
+        avg_storage_inflow_10_years=VALUES(avg_storage_inflow_10_years),
         avg_storage_release_12_months=VALUES(avg_storage_release_12_months),
         avg_storage_release_5_years=VALUES(avg_storage_release_5_years),
-        avg_storage_release_20_years=VALUES(avg_storage_release_20_years);
+        avg_storage_release_10_years=VALUES(avg_storage_release_10_years);
     """
     cur.executemany(sql, rows)
     conn.commit()

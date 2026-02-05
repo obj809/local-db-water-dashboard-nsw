@@ -6,7 +6,7 @@ import mysql.connector
 from dotenv import load_dotenv
 from mysql.connector import Error
 
-SQL_PATH = os.path.join(os.path.dirname(__file__), "../sql/example_queries.sql")
+SQL_PATH = os.path.join(os.path.dirname(__file__), "../queries/example_queries.sql")
 
 def load_env():
     dotenv_path = os.path.join(os.path.dirname(__file__), "../.env")
