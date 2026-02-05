@@ -29,6 +29,14 @@ python3 scripts/local_db_test_queries.py
 
 scripts/check_api_date_range.py
 
+## Analysis Procedures (stored procedures + scheduled event)
+
+python3 scripts/local_db_create_procedures.py
+
+### Manual trigger
+
+python3 scripts/local_run_analysis.py
+
 
 ## Local DB to Spreadsheet Export
 
