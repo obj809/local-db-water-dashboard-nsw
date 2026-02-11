@@ -14,6 +14,8 @@ A local MySQL-based system for tracking and analyzing dam data across NSW, Austr
 - [Known Issues](#known-issues)
 - [Challenges](#challenges)
 
+![Database schema](images/database-schema.png)
+
 ## Goals & MVP
 Create a centralized system that stores dam metadata, tracks water storage levels, archives historical data, and supports analytical reporting for 38 NSW dams.
 
