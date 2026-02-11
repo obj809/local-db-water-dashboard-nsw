@@ -14,10 +14,9 @@ A local MySQL-based system for tracking and analyzing dam data across NSW, Austr
 - [Known Issues](#known-issues)
 - [Challenges](#challenges)
 
-![Database schema](database-schema.png)
+## Database Schema
 
-## Goals & MVP
-Create a centralized system that stores dam metadata, tracks water storage levels, archives historical data, and supports analytical reporting for 38 NSW dams.
+![Database schema](database-schema.png)
 
 ## Tech Stack
 - Python 3
@@ -67,42 +66,17 @@ python3 scripts/local_db_seed_data.py
 ```bash
 python scripts/local_export_mysql_to_excel.py
 ```
-
-## Project Architecture
-
-```
-├── input_data/           # Raw JSON data from WaterNSW API
-│   ├── dams.json
-│   ├── dams_resources_latest.json
-│   └── dam_resources/    # Historical data per dam
-├── transform/            # ETL transform scripts
-├── output_data/          # Transformed data (schema-ready)
-├── seeding/              # Database seeding scripts
-├── scripts/              # DB setup and export utilities
-├── queries/              # Example SQL queries
-└── schema.sql            # Database schema definition
-```
-
 ### Data Flow
 ```
 WaterNSW API → input_data/ → transform/ → output_data/ → seeding/ → MySQL
 ```
 
-## Design Goals
-- **Data Integrity**: Foreign keys with cascading relationships
-- **Idempotency**: Upsert operations for safe re-runs
-- **Security**: Parameterized queries to prevent SQL injection
-- **Modularity**: Separate transform and seeding scripts with dependency ordering
-
 ## Project Features
 - [x] 38 NSW dams with metadata (capacity, coordinates, identifiers)
 - [x] Dam grouping system (Sydney, popular, large, small, greatest released)
 - [x] Historical monthly snapshots from WaterNSW API
-- [x] ETL pipeline for data transformation
-- [x] Excel export with customizable table filtering
 
 ## Learning Highlights
-- ETL pipeline design with separation of concerns
 - Normalized database schema design with foreign key relationships
 - Orchestrated data pipelines with dependency ordering
 - Upsert patterns and composite keys in SQL
